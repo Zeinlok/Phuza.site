@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+           <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">PHUZA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="phuza_website (1).html">Início</a>
+                    </li>
+
+
+         <div class="dropdown" >
+                       <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true" style="background-color: transparent; border: none;">
+                       jogar
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                         <li><a class="dropdown-item diviver" href="JogoGratis.html"> jogo gratis</a></li>
+                          <li><a class="dropdown-item divider" href="html.html">jogo pago</a></li>
+                      </li>
+                      </ul>
+                   </div>
+                    <div class="dropdown" >
+                       <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true" style="background-color: transparent; border: none;">
+                       Sobre
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                         <li><a class="dropdown-item diviver"  href="phuza_website (1).html">Como jogar</a></li>
+                          <li><a class="dropdown-item divider" href="phuza_website (1).html">Recursos</a></li>
+                      </li>
+                      </ul>
+                   </div>
+                    <li class="nav-item">
+                </ul>
+                <button class="btn btn-hidden">ESCONDIDO</button>
+            </div>
+        </div>
+    </nav>
+     <div class="game-instructions">
+        <h4 class="fw-bold mb-3" style="color: var(--accent-green);">
+            <i class="fas fa-info-circle"></i> Como Funciona
+        </h4>
+        <p class="mb-2">Clique em "TIRAR UMA CARTA" para revelar um desafio aleatório</p>
+        <p class="mb-2">Complete o desafio proposto ou... BEBA! 🍻</p>
+        <p class="text-warning fw-bold">⚠️ Apenas para maiores de 18 anos</p>
+    </div>
+    <section id="jogo" class="py-5">
+        <div class="container">
+            <div class="game-section">
+                <h1 class="game-title">PHUZA</h1>
+                
+
+                <button onclick="sortearFoto()" class="draw-card-btn">
+                    <i class="fas fa-random me-2"></i>TIRAR UMA CARTA
+                </button>
+
+                <div class="card-container">
+                    <div id="cardDisplay" class="game-card">
+                        <!-- A carta sorteada aparecerá aqui -->
+                    </div>
+                </div>
+
+                <!-- Cards ocultas para sorteio -->
+                <div style="display: none;" >
+                   <img class="foto" src="https://static.wixstatic.com/media/d48907_75b5f03e83fc4cfb8be70cbf7b1defad~mv2.png" alt="Foto 1">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9f29d76175c3465d9538d238ab00e510~mv2.png" alt="Foto 2">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d126b5e4bd0945ad9eaa48f89a1139ee~mv2.png" alt="Foto 3">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_94bc59fb0f3d4ebb9029925e24930053~mv2.png" alt="Foto 4">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d83994f4045349029c8f50bc9c57fe2f~mv2.png" alt="Foto 5">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_21140a8888e34f1d900ded4149c0f3db~mv2.png" alt="Foto 6">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_00ea0cc210c84fdeabedef046f6a027e~mv2.png" alt="Foto 7">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_0c6deb294ad342b2bc05957369c5f4f8~mv2.png" alt="Foto 8">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_eb393e90ed2d442b83430e9208c303df~mv2.png" alt="Foto 9">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5b4a84fa53284c059aa053ca7508ccb5~mv2.png" alt="Foto 10">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_75276564fd2d45139de7cd882a93935e~mv2.png" alt="Foto 11">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d4393c7f8eed474794c0c2e22445ce8b~mv2.png" alt="Foto 12">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_47c667caf6a34ee2b7ef431bd6e30725~mv2.png" alt="Foto 13">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_dedd6c81371d45f0aac0c5aadeecd925~mv2.png" alt="Foto 14">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_0dffa7f6056d4b1b85000aec5e818eab~mv2.png" alt="Foto 15">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_283e36d59f1944c89013d26af18433ab~mv2.png" alt="Foto 16">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_bbe6314807d64ea685d2fff2969027ab~mv2.png" alt="Foto 17">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_c72a5e4df8b44574ab3ed9285a28c6e0~mv2.png" alt="Foto 18">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_1b1d59d4b0f349f385650888937354d8~mv2.png" alt="Foto 19">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_2acabc17dc00481dbdcc1e330ecfecce~mv2.png" alt="Foto 20">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_be1db22e485441b7859445b8559eb0ed~mv2.png" alt="Foto 21">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b12c6c8e81ee4328a5671973cc83f79d~mv2.png" alt="Foto 22">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_0afc9b2f51954b6bbc8323cb014c6a7f~mv2.png" alt="Foto 23">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ab1c6ab219484c2ca075b339e608de36~mv2.png" alt="Foto 24">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7dba6c594ae8451ea902a87b378f88af~mv2.png" alt="Foto 25">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_56412344dbab4d608306dd164a865057~mv2.png" alt="Foto 26">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b7f28ecfff2f4a58bfd2d78cda261914~mv2.png" alt="Foto 27">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b51f033250304f43a2aadd851bfb49dd~mv2.png" alt="Foto 28">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_3d756d9e23ed4bc0bf122791c96ca7fb~mv2.png" alt="Foto 29">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9a81d3b772b544e08f7f9e558bc90eae~mv2.png" alt="Foto 30">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_56dae6b88f414ad291215e27d565587c~mv2.png" alt="Foto 31">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_c34e27f2f0484688a8d647673d5d808d~mv2.png" alt="Foto 32">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_82fb31ade1de47f1850a0d1c9d42f4b7~mv2.png" alt="Foto 33">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5423bd41523d4aa68029ff9b335d404e~mv2.png" alt="Foto 34">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_bbb45641fcd7471c85fdde085d3fe00d~mv2.png" alt="Foto 35">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_cad4875178204173a331558e03b3aaf9~mv2.png" alt="Foto 36">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_a349cc8379a94c8fb67b6b8e1e794089~mv2.png" alt="Foto 37">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d9348d587f1b412483b9d4f0b5e6692c~mv2.png" alt="Foto 38">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_61a76e9fd6bc4cf199fd026d5c13af9a~mv2.png" alt="Foto 39">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_511fca8f5ac14083b0942f00db879eec~mv2.png" alt="Foto 40">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_3cf744ab0b594237bb08ebbd64c98e5e~mv2.png" alt="Foto 41">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_88edbde0ffbb4872be0d88cb52187839~mv2.png" alt="Foto 42">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_1d2b607933f94cb6a06fcd2b2bf26149~mv2.png" alt="Foto 43">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_c7ab194f56ca4d33ba2d6f180f099a1b~mv2.png" alt="Foto 44">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_27effb23d74a481d9a591832a03cf50a~mv2.png" alt="Foto 45">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_70a08fdfc63a4d74bcf89144d53503eb~mv2.png" alt="Foto 46">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_c7ab194f56ca4d33ba2d6f180f099a1b~mv2.png" alt="Foto 47">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9e3a664e78104a28b147399f8d7fab02~mv2.png" alt="Foto 48">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_bd9b885d5130462d8659d01d29f3610a~mv2.png" alt="Foto 49">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b4e4854e2e364696b9a29a9b14cf4a7f~mv2.png" alt="Foto 50">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_dda977a4dc50403698ade93c80082a14~mv2.png" alt="Foto 51">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b0b656e5af4e4b4cad201ad12dc73920~mv2.png" alt="Foto 52">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_8fd4c6e0a74a41c1a95bed53d05f0fb0~mv2.png" alt="Foto 53">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_fa051675c4b54a789e03de48e4675b3c~mv2.png" alt="Foto 54">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_4f39d6f5d69f4146b08b0fb81a88e611~mv2.png" alt="Foto 55">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_cc789219669c4a609cffaf54a1c1c520~mv2.png" alt="Foto 56">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_2aab49cdbf7743b0b4079e43b1404549~mv2.png" alt="Foto 57">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_6e1e88664d5746f3b5fa03d5842c49e8~mv2.png" alt="Foto 58">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_6050a29dd4944e0ebaf3e11bd21ede95~mv2.png" alt="Foto 59">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_07fcea80127d40c5ab57aef411b1a0dd~mv2.png" alt="Foto 60">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_bec25baf91f94bb5b18ec0c85b7299c7~mv2.png" alt="Foto 61">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ba6757733313403abc89f417c79b4952~mv2.png" alt="Foto 62">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_996b4d222b08486aad94ee9094625126~mv2.png" alt="Foto 63">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_8a38c00c83fd41bb8e320dca1179e4e2~mv2.png" alt="Foto 64">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b9519db010be44578d4703b89c650978~mv2.png" alt="Foto 65">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_6f23b02387c34b4393cdde38e9b951ec~mv2.png" alt="Foto 66">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_e5b1e22b1067470fbe7117544fead6da~mv2.png" alt="Foto 67">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_45f0625cad6340c49e510c1b68971bfd~mv2.png" alt="Foto 68">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_16d54c641b67422a8167f801f4c0749b~mv2.png" alt="Foto 69">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_845a049b8dfa41fdb7a2fa5a55db0bd8~mv2.png" alt="Foto 70">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ee69469add804ea8aaa24516d97294d6~mv2.png" alt="Foto 71">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_f431f6f4e90a469ca29f766b0e7384d6~mv2.png" alt="Foto 72">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_fb68162774824e41abcb4a5c0b96a6ba~mv2.png" alt="Foto 73">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d6b1c1cafbb1482fb3151b8fadf7ba79~mv2.png" alt="Foto 74">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b673f6a79eb04513976856023ba51e74~mv2.png" alt="Foto 75">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_8a4416525de7465ba211cc0b43924736~mv2.png" alt="Foto 76">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_29fee829498f48618e07c89956f895bc~mv2.png" alt="Foto 77">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d0e07447408349fe917399174ee69fc7~mv2.png" alt="Foto 78">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7612550c71d249b8aa686416828f3004~mv2.png" alt="Foto 79">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b5bf0f148d064332869ddd3c9bced6be~mv2.png" alt="Foto 80">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_2378649160e840e1a9c561c233c5a52b~mv2.png" alt="Foto 81">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7612550c71d249b8aa686416828f3004~mv2.png" alt="Foto 82">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d93ce580ebbe47689897173b747c525f~mv2.png" alt="Foto 83">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_bc2e6d4bbc614c81b030526d09ecad05~mv2.png" alt="Foto 84">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_bb8e36808053489ea0f018137e990795~mv2.png" alt="Foto 85">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_09453656a8d44adca74122bc85006417~mv2.png" alt="Foto 86">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_78cc1ded8adc4c2c829d10b1ff12b2c6~mv2.png" alt="Foto 87">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_31356990509946e1824bf10dea14cff3~mv2.png" alt="Foto 88">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_14b7d6c587774629977977c9ed90f7ee~mv2.png" alt="Foto 89">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ec67aabd83664dc995c0018c76a6b940~mv2.png" alt="Foto 90">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5e09eabd8db64d819044e83e812163af~mv2.png" alt="Foto 91">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9c288a13cf6d42f9bc75b3ca30e76ba0~mv2.png" alt="Foto 92">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_09872c7521444f97b19f64ad5b06199a~mv2.png" alt="Foto 93">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_95a7de1b19e54925b463f57b22ddb4ee~mv2.png" alt="Foto 94">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_517e81fc1c1d4195abafad8149ad162b~mv2.png" alt="Foto 95">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_a0050b3869f14c71b103878a4236cb59~mv2.png" alt="Foto 96">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_709bbb0bf16444a5af7be1b6b113e8b8~mv2.png" alt="Foto 97">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_85896447a2c54d39ba67e1d12f1b8f14~mv2.png" alt="Foto 98">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_4f6b9b71538a4f348fbc12f75a61a311~mv2.png" alt="Foto 99">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_e1c53b8ac5f646909ad2931d4b4b244e~mv2.png" alt="Foto 100">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_2240b331b8e84682b7db33dbea3ef1e8~mv2.png" alt="Foto 101">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_105c19b540914e1db942873471ffa22e~mv2.png" alt="Foto 102">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_742647b9bad34aba86239d135296a4b7~mv2.png" alt="Foto 103">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ab363eb5ac1a48b39283adf1f1838771~mv2.png" alt="Foto 104">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_79bcc659a8a242e88adc8109196571df~mv2.png" alt="Foto 105">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_54eb491a110b4bb0a08dab79e7c6c959~mv2.png" alt="Foto 106">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_154e7c5796ed47c0b683fb32e499ff71~mv2.png" alt="Foto 107">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_20fad4cb906d4ca4928f5ccc1dc3ec9a~mv2.png" alt="Foto 108">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_764f24f7007542088586b32421013126~mv2.png" alt="Foto 109">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_15564f73151f4edbb4f87be9ee2f1d75~mv2.png" alt="Foto 110">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7171db8088b8446ab8a4f8a85ce08158~mv2.png" alt="Foto 111">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_6eceab0bfb594a46b40b46fadfd80e5a~mv2.png" alt="Foto 112">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_789768b042804c279ea84efc549cba4b~mv2.png" alt="Foto 113">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_f3930cafc8e04203adf0d4a6278ddf30~mv2.png" alt="Foto 114">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_bac6488dc1e94ea2b6aed5b98d97b436~mv2.png" alt="Foto 115">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_6504fb3c05254a2aba8fe1266ea4e3dc~mv2.png" alt="Foto 116">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_8571e80b80e445e08fa4c5168f04e29b~mv2.png" alt="Foto 117">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_fea2005c70ba4bdfbe66a57b4fd4020b~mv2.png" alt="Foto 118">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_6504fb3c05254a2aba8fe1266ea4e3dc~mv2.png" alt="Foto 119">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_c7f7c98c376447e189ab86892a318b38~mv2.png" alt="Foto 120">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_bac6488dc1e94ea2b6aed5b98d97b436~mv2.png" alt="Foto 121">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_4ab040107c85407883f70b031004f21c~mv2.png" alt="Foto 122">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_37d8f0386ebb433696bbc4475443864f~mv2.png" alt="Foto 123">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_2e4002f8655449d49141bacecd444012~mv2.png" alt="Foto 124">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_fea2005c70ba4bdfbe66a57b4fd4020b~mv2.png" alt="Foto 125">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9166fbe1054b405a9c032813b723b9e4~mv2.png" alt="Foto 126">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_044aea855c644ddf98c69572313e7c4d~mv2.png" alt="Foto 127">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_573b31fa42974376ae41d25b7aa65977~mv2.png" alt="Foto 128">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_19f4655fd99049638b070f27c94e171a~mv2.png" alt="Foto 129">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_76696c6703ec4af9a07f2fdaf3ca4432~mv2.png" alt="Foto 130">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_af5ce4b2c22b40089e0f9a5a51b3de23~mv2.png" alt="Foto 131">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_f61184bb15ed40cf9573befa9b2164f9~mv2.png" alt="Foto 132">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_cae5c9249ad14fd0be71bb27a6ab58e9~mv2.png" alt="Foto 133">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7b7eec573daf45c39d522208e8315270~mv2.png" alt="Foto 134">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_c6c8b3171c39416fa4981e2e570b1f02~mv2.png" alt="Foto 135">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_f24a442827cb4cd8810332942e6e0309~mv2.png" alt="Foto 136">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_0deafefbbe7d4394906d8aefd50bb125~mv2.png" alt="Foto 137">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_0972b7fe62584c58a8187c1df3ceb428~mv2.png" alt="Foto 138">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_936132136c49481cbc4dadfc77ffac9a~mv2.png" alt="Foto 139">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7f0bc894b1df4d9597cb64bd69f3f914~mv2.png" alt="Foto 140">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5467086bc81e4230af55d93ec86a7b3c~mv2.png" alt="Foto 141">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_cbbccbba6785451dadce1e54132459a6~mv2.png" alt="Foto 142">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_4b934dd376df4914a5f1426e5d12a695~mv2.png" alt="Foto 143">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_f0f31fe3f8fb41a8a89cb2768d46ead1~mv2.png" alt="Foto 144">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_01e80cd4d88446008bfc00c465f93c1b~mv2.png" alt="Foto 145">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_cbbccbba6785451dadce1e54132459a6~mv2.png" alt="Foto 146">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_1bddb9511b7b437b87a200214c4c3870~mv2.png" alt="Foto 147">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_f65b8d59f21a4502af99709a3c1b06b6~mv2.png" alt="Foto 148">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_93b340e6722744df9816034c4095c87e~mv2.png" alt="Foto 149">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_c640d4c5085a45d18ade099fc0fc7715~mv2.pngº" alt="Foto 150">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9344f9bd224446d5a6be18d59451f07f~mv2.png" alt="Foto 151">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_8f2e94e8707241cb9cc29bea978e2dd0~mv2.png" alt="Foto 152">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_16c10aabcc0c46769a9106d728bc22d8~mv2.png" alt="Foto 153">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_2199afb5e8e44509ab16b6c753f0bbf1~mv2.png" alt="Foto 154">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_40a8f9af7cc449f39bdce5a8ab809255~mv2.png" alt="Foto 155">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5e1b08335cb34611acbc79d502e09f15~mv2.png" alt="Foto 156">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_112c81360d0c49e8b2bc856cc74ecd92~mv2.png" alt="Foto 157">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ca3601bd0e474d619eda48f260b55035~mv2.png" alt="Foto 158">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_f81891114d154d82b8410c2e64472eb2~mv2.png" alt="Foto 159">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ca3601bd0e474d619eda48f260b55035~mv2.png" alt="Foto 160">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_46716339c24b496791bf279340e597c8~mv2.png" alt="Foto 161">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ca3601bd0e474d619eda48f260b55035~mv2.png" alt="Foto 162">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_720300c8c2d640c1ae7b438fb94e1ee4~mv2.png" alt="Foto 163">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ef409a6695e2407fb177176c6b6e2224~mv2.png" alt="Foto 164">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_2945ce9d9e794772902c820d24d1d5bd~mv2.png" alt="Foto 165">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_aa1a994b8c5044cbaab0510e32ab9e18~mv2.png" alt="Foto 166">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ce99704c512d460fb4c8683b692db80e~mv2.png" alt="Foto 167">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_35eb371452f74b23a36313b57ba3cecf~mv2.png" alt="Foto 168">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_592f9c951c014e3f84f22c3360c64dd7~mv2.png" alt="Foto 169">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_c6bf0a446bd04ca4a4582898732f8ce5~mv2.png" alt="Foto 170">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7ee83c3c93084a578a8dde87cc44e0b9~mv2.png" alt="Foto 171">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_8249ec0fdfcc42fbb90127c57c049c7a~mv2.png" alt="Foto 172">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d72f3f7e231b4936a227ede551e09e34~mv2.png" alt="Foto 173">    
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9176fd6d9ca84a1a93476e5cac86fd38~mv2.png" alt="Foto 174">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_1bc65f4d05784886962f8c03784abc1a~mv2.png" alt="Foto 175">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_300943dd6e1543b386200a058f21712c~mv2.png" alt="Foto 176">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_e66b8ad5482b428da9b6b22b21d205c9~mv2.png" alt="Foto 177">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_0341d63a94e54552a413b9d387093aef~mv2.png" alt="Foto 178">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_1251d6bed67d489cb7b62bd4d2fc89b6~mv2.png" alt="Foto 179">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_4e2b9d0f7ceb4d6bb080cc0e808c87ba~mv2.png" alt="Foto 180">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_28cfafea47b5473188d9203c64bfc955~mv2.png" alt="Foto 181">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d83a2ecc0fbe4ab7b59f0b30aec8018b~mv2.png" alt="Foto 182">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_45abd8298042400f9377d859c042a512~mv2.png" alt="Foto 183">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_05d47ac5c1844f93879ab9480a7c3880~mv2.png" alt="Foto 184">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_cad129f53a414e21a35ce7830f4106d6~mv2.png" alt="Foto 185">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b39c058784fb45f286fab8179b9538d5~mv2.png" alt="Foto 186">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_19abc9fb72fe4cdf9556e13a4ae6b7c3~mv2.png" alt="Foto 187">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_70a48554dda9434fa0372f3cb0a5eb22~mv2.png" alt="Foto 188">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_883d5ae76abc47c18767b7e708b99d29~mv2.png" alt="Foto 189">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_e8a7b03f42834e6f8b032b04085f96d6~mv2.png" alt="Foto 190">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5f9a8746f564491fa7a0f1a24148d044~mv2.png" alt="Foto 191">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5419bd365e614aadac2c6a86635ce889~mv2.png" alt="Foto 192">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_0a229921735548aea5f3d604a2a95e36~mv2.png" alt="Foto 193">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_fdb45d8c84ea4e14bb47fa39478b4d5e~mv2.png" alt="Foto 194">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_4f0668b9820a4c33ac11179feb527d86~mv2.png" alt="Foto 195">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b690f39ba54e4c18a0fcbd0500c7bd15~mv2.png" alt="Foto 196">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_38abf3c795ae472db1246b015c732095~mv2.png" alt="Foto 197">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ad8a79f683134b748fca7ff8abdaf14a~mv2.png" alt="Foto 198">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_46942ae812ad4163b28005e25796d3ce~mv2.png" alt="Foto 199">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_a72148034f9d441fa365fbb985d4c532~mv2.png" alt="Foto 200">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5ef259df34654423b05f5fad3265ac55~mv2.png" alt="Foto 201">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_cfa5bab8b7a24e08b1e9112865a366ea~mv2.png" alt="Foto 202">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_15380a8c9c904f5eaa15ffddb37dbb1f~mv2.png" alt="Foto 203">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_225c54fe5a28441db7264a12d22cec62~mv2.png" alt="Foto 204">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9a43db9074884120afdb0945ac806be2~mv2.png" alt="Foto 205">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5a6577d18ac74efda6dab2255c6f1b76~mv2.png" alt="Foto 206">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b255adba5ffd46459026e2d622bb5bfc~mv2.png" alt="Foto 207">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7548ef2aa27f4db895abfa2ca620c97a~mv2.png" alt="Foto 208">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_3cf5c6d6642143e598ee2c117f8bfa46~mv2.png" alt="Foto 209">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_e7379eb2bc3c40ba8a2fdb3027475744~mv2.png" alt="Foto 210">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_deb23f49134d48de8c1e71bb4213af42~mv2.png" alt="Foto 211">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5cbbfa78b56841eea1c620a9d53b9fba~mv2.png" alt="Foto 212">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9a2c22c31f0d4d298d404d883838916a~mv2.png" alt="Foto 213">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_cba9249d95dd42e19d39690f79c6bb5e~mv2.png" alt="Foto 214">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_92a38ed3fe0946dbb07e0eb1bb3434e3~mv2.png" alt="Foto 215">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_796f022e83484e65869103519749e526~mv2.png" alt="Foto 216">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_194f84af9db54954b4ff059b4e14646f~mv2.png" alt="Foto 217">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_9dc9a55af2c34589aa29c5871383b9ab~mv2.png" alt="Foto 218">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_935fc470bd884c9abb2f6cd7567610b0~mv2.png" alt="Foto 219">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_43bced4429dd450db8a44e4b12605377~mv2.png" alt="Foto 220">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_dbfa7670196d4c14bd7a2bdb9c9b75c6~mv2.png" alt="Foto 221">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5fcc2e6bc8fd407ba19c50987479e81a~mv2.png" alt="Foto 222">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_67c0fcb6d3e14b198e2466f6191b118b~mv2.png" alt="Foto 223">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_96887a95637249ee90576e7a742e9798~mv2.png" alt="Foto 224">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ac0db8e1dfb44e2c89df7efe17cecfe3~mv2.png" alt="Foto 225">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_f71f173655fd4ce39c17c7f404148773~mv2.png" alt="Foto 226">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_e18876c202364ab69521c002c851e6ea~mv2.png" alt="Foto 227">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_94f1a7904cf24f09be9ab86e3dfe33cb~mv2.png" alt="Foto 228">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_fb3c9312a08c49bf97fa730772b77633~mv2.png" alt="Foto 229">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_c4e578ac96634cca936ed8f8684659b7~mv2.png" alt="Foto 230">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_752fb1cf15834a0fa729f509b59845d8~mv2.png" alt="Foto 231">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_95ca86445fe14cd08af8d1d7bbb1a1c7~mv2.png" alt="Foto 232">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_d706acb33133405f9fa488d558200496~mv2.png" alt="Foto 233">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_99408644823b4e66b5362270fc77b644~mv2.png" alt="Foto 234">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_70484fa977b24f17ac34cb5a846f89e2~mv2.png" alt="Foto 235">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_adeefa698d5b4c2b81077d93690976e4~mv2.png" alt="Foto 236">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_23eefa465bf34dfd94c705bf149f0532~mv2.png" alt="Foto 237">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_590dd11fbe124bb0b4aa8fdf39d908b4~mv2.png" alt="Foto 238">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_5e8e8272f52345bb807974f8e651cebe~mv2.png" alt="Foto 239">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_4f3d06b488ef4c5e88383f817d6101da~mv2.png" alt="Foto 240">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_ecdd0e7144a54cc4815b9ebaa22a054c~mv2.png" alt="Foto 241">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_b1b7e8ccd9304302b0179de1abd16691~mv2.png" alt="Foto 242">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7a0e92bd1f7b409faddea80202d3a459~mv2.png" alt="Foto 243">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_7d74e577793546cea852ce663d944a31~mv2.png" alt="Foto 244">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_792b00fcf0454ee58d2433c92aa2fb82~mv2.png" alt="Foto 245">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_f69adcebb43e4ee5a941b10c2e3a5f05~mv2.png" alt="Foto 246">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_2f80fb0350fc4fc7a60f2b4f1066eb62~mv2.png" alt="Foto 247">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_4dda30915907406287f1b5be50c2d0d9~mv2.png" alt="Foto 248">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_3c721356cf454e269b2b72e91660cea1~mv2.png" alt="Foto 249">
+    <img class="foto" src="https://static.wixstatic.com/media/d48907_bee0826812d041c8af66f451ae46143a~mv2.png" alt="Foto 250">
+
+                </div>
+            </div>
+        </div>
+    </section>
+     <div class="container">
+        <h1 class="game-title">Contador de Pontos</h1>
+
+        <div style="display: flex; justify-content: center;" class="age-restrictionZein" >
+            <label><h1 class="age-restrictionZein">Jogadores:</h1></label>
+           <h1 class="age-restrictionZein"> <input   type="number" id="numPlayers" min="2" max="20" value="4"></h1>
+            <button  class="btn btn-secondary-customzein" onclick="generateTable()">Gerar Tabela</button>
+        </div>
+
+        <div id="tableContainer"></div>
+        <div id="winner"></div>
+    </div>
+
+       <footer class="footer-custom">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="fw-bold mb-3" style="color: var(--accent-blue);">PHUZA</h5>
+                <p class="text-secondary">O jogo de desafios definitivo para maiores de 18 anos</p>
+                <div class="social-links">
+                    <a href="#" class="text-secondary me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-secondary me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-secondary me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+                <hr style="border-color: var(--accent-blue); opacity: 0.3;">
+                <p class="text-secondary">&copy; 2025 PHUZA. Todos os direitos reservados. | Jogo responsável - Maiores de 18 anos</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background opacity on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(20, 20, 20, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(20, 20, 20, 0.95)';
+            }
+        });
+
+        // Game functionality
+        var fotos = document.querySelectorAll('.foto');
+        var cardDisplay = document.getElementById('cardDisplay');
+
+        function sortearFoto() {
+            if (fotos.length === 0) return;
+            
+            var numeroSorteado = Math.floor(Math.random() * fotos.length);
+            var cartaSorteada = fotos[numeroSorteado];
+            
+            // Remove carta atual se existir
+            cardDisplay.classList.remove('visible');
+            
+            // Adiciona efeito de loading
+            cardDisplay.innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent-blue); font-size: 2rem;"><i class="fas fa-spinner fa-spin"></i></div>';
+            cardDisplay.classList.add('visible');
+            
+            // Após 1 segundo, mostra a carta sorteada
+            setTimeout(function() {
+                cardDisplay.innerHTML = '<img src="' + cartaSorteada.src + '" alt="' + cartaSorteada.alt + '" style="width: 100%; height: 100%; object-fit: cover; border-radius: 17px;">';
+                
+                // Adiciona efeito de entrada da carta
+                cardDisplay.style.transform = 'scale(0.8) rotateY(180deg)';
+                setTimeout(function() {
+                    cardDisplay.style.transform = 'scale(1) rotateY(0deg)';
+                }, 100);
+            }, 1000);
+        }
+
+        // Add hover effect to cards
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+      <script>
+        let players = {};
+
+        function generateTable() {
+            const num = parseInt(document.getElementById('numPlayers').value);
+            if (num < 2 || num > 20) return;
+
+            // Reset data
+            players = {};
+            for (let i = 1; i <= num; i++) {
+                players[`player${i}`] = { bebeu: 0, fez: 0, pontos: 0 };
+            }
+
+            // Create table
+            let html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jogador</th>
+                            <th>Bebeu</th>
+                            <th>Fez</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            for (let i = 1; i <= num; i++) {
+                html += `
+                    <tr>
+                        <td>Jogador ${i}</td>
+                        <td>
+                            <div class="score-cell">
+                                <span id="bebeu-${i}" class="score-display">0</span>
+                                <button class="score-btn score-btn-red" onclick="updateScore(${i}, 'bebeu')">-</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="score-cell">
+                                <span id="fez-${i}" class="score-display">0</span>
+                                <button class="score-btn" onclick="updateScore(${i}, 'fez')">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <span id="pontos-${i}" class="pontos">0</span>
+                        </td>
+                    </tr>
+                `;
+            }
+
+            html += `</tbody></table>`;
+            document.getElementById('tableContainer').innerHTML = html;
+            updateWinner();
+        }
+
+        function updateScore(playerNum, type) {
+            const player = `player${playerNum}`;
+            players[player][type]++;
+            
+            // Update display
+            document.getElementById(`${type}-${playerNum}`).textContent = players[player][type];
+            
+            // Calculate points: fez - bebeu
+            players[player].pontos = players[player].fez - players[player].bebeu;
+            document.getElementById(`pontos-${playerNum}`).textContent = players[player].pontos;
+            
+            updateWinner();
+        }
+
+        function updateWinner() {
+            let maxPoints = -Infinity;
+            let winners = [];
+
+            for (const player in players) {
+                const points = players[player].pontos;
+                if (points > maxPoints) {
+                    maxPoints = points;
+                    winners = [player];
+                } else if (points === maxPoints) {
+                    winners.push(player);
+                }
+            }
+
+            const winnerDiv = document.getElementById('winner');
+            if (winners.length === 1) {
+                const num = winners[0].replace('player', '');
+                winnerDiv.innerHTML = `<div class="winner">Vencedor: <span>Jogador ${num}</span> (${maxPoints} pontos)</div>`;
+            } else if (winners.length > 1) {
+                const names = winners.map(p => `Jogador ${p.replace('player', '')}`).join(', ');
+                winnerDiv.innerHTML = `<div class="winner">Empate: <span>${names}</span> (${maxPoints} pontos cada)</div>`;
+            }
+        }
+
+        // Generate initial table
+        generateTable();
+    </script>
+</body>
+</html>
